@@ -107,6 +107,8 @@ hello("Guido")()
 <p>While there's a <code>print()</code> statement inside of the
 <code>greet()</code> function, it won't be interpreted if <code>greet()</code>
 is not invoked.</p>
+  
+  <p>Also, note that <code>hello("Guido")()</code> is invoking the return value of the function. So, if we don't return a function from hello but instead return nothing, we'd then also get a TypeError: 'NoneType' object is not callable</p>
 
 </p>
 </details>
